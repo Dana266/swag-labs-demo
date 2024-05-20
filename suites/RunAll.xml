@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test All">
+
+    <test name="Login Without Username">
+        <classes>
+            <class name="com.saucedemo.login_logout.LoginWithoutUsername"/>
+        </classes>
+    </test>
+
+    <test name="Login With Valid Credentials and Logout">
+        <classes>
+            <class name="com.saucedemo.login_logout.LoginLogout"/>
+        </classes>
+    </test>
+
+    <test name="PLP Sorting">
+        <classes>
+            <class name="com.saucedemo.plp.PLPSorting"/>
+        </classes>
+    </test>
+
+    <test name="Add to Cart and Checkout">
+        <classes>
+            <class name="com.saucedemo.add_to_cart_checkout.AddToCartCheckout"/>
+        </classes>
+    </test>
+
+    <!--     mvn test -Dsurefire.suiteXmlFiles=src/test/resources/RunAll.xml-->
+</suite>
